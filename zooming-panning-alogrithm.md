@@ -1,6 +1,8 @@
 # Zooming & Panning Algorithm
 To provide the `panTo(node_id)` and `zoomOn(node_id)` methods, the exact node size and location relative to the container SVG document must be calculated.
 
+See [this guide on SVG coordinates](https://sarasoueidan.com/blog/svg-coordinate-systems/)
+
 ## Single nodes
 The location of a single node is easier. First a pan is applied then a zoom.
 
@@ -27,3 +29,5 @@ The case of multiple nodes is a little trickier since need to find the point tha
 
 ### Zoom
 1. Do as with single node but using the bounding box of all nodes
+
+
