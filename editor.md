@@ -4,7 +4,7 @@ To allow for user's to easily use the new manipulation API, some way for them to
 ## Markdown
 Can use a custom markdown syntax using [markdown-js](https://github.com/evilstreak/markdown-js).
 
-```
+```markdown
 This process describes the conversion of precursor messenger RNA into mature messenger RNA (mRNA).
 The pre-mRNA molecule undergoes [three main modifications](zoomOn, ['node1', 'node2', 'node3']). These modifications are [5' capping](highlightOn, 'node_id'), [3' polyadenylation](highlightOn, nod_id), and [RNA splicing](highlightOn, node_id), which occur in the cell nucleus before the RNA is translated.
 [5' Capping](panTo, [node_ids,...]): Capping of the pre-mRNA involves the addition of 7-methylguanosine (m7G) to the 5' end. The cap protects the 5' end of the primary RNA transcript from attack by ribonucleases that have specificity to the 3'5' phosphodiester bonds.
