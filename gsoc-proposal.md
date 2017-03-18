@@ -33,7 +33,7 @@ An interface will be created that enables users to easily create presentations. 
 ![example user interface](Drawing.jpeg)
  
 ### Data Strorage
-All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The slide object contains key: value pair node IDs with an ordered list of the manipulation API operation, and their parameters that should be carried out. 
+All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The slide object contains key: value pair node IDs with an ordered list of the manipulation API operations, and their parameters, that should be carried out. 
 
 Example Presentation:
 ```javascript
