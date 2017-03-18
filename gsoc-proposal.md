@@ -14,10 +14,10 @@ For example:
   
  
 ### Data Strorage
-All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The Slide object contains key: value pair manipulation API methods that should be called for each node. 
+All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The slide object contains key: value pair node IDs with an ordered list of the manipulation API methods, and their parameters that should be carried out
 
 Example Presentation:
-```json
+```javascript
 {
   id: string,
   wpId: string,
@@ -32,7 +32,7 @@ Example Presentation:
 ```
 
 Example Slide:
-```json
+```javascript
 {
    node_1: [
     {
