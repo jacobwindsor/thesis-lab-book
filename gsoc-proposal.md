@@ -67,6 +67,8 @@ Example Slide:
   ]
 }
 ```
+## Example User Interface
+![example user interface](Drawing.jpeg)
 
 ## Future Work
 This project represents a starting point for future work that will improve upon this work. For example, a further feature would be the easy embedding of these presentations in other web applications. Hence this would allow for sites like Nature Reviews to replace their static diagrams with these story based pathways. Furthermore, the export of an MP4 version of these pathway presentations would allow for easy embedding within powerpoint presentations and the like. I have taken design considerations to make it easily possible to create an open API for third-party developers to create pathway presentations through their own applications. 
