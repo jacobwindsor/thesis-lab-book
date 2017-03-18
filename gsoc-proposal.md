@@ -18,7 +18,7 @@ I have already created a Kaavio/PVJS "Manipulation API" that allows for develope
 
 ## Methods
 ### Presentation API
-A new JavaScript API will be created that utilies the Manipulation API to create presentations containing different slides. The API will contain methods that allow for developers to create presentations, sides and add manipulation API operations to nodes in a slide. Each new "slide" represents a pathway "state". Each state contains specification for which manipulation API methods are called on entering that state. 
+A new JavaScript API will be created that utilises the Manipulation API to create presentations containing different slides. The API will contain methods that allow for developers to create presentations, sides and add manipulation API operations to nodes in a slide. Each new "slide" represents a pathway "state". Each state contains specification for which manipulation API methods are called on entering that state. 
 
 For example:
 - Slide 1:
