@@ -17,7 +17,8 @@ One method to improve a pathway diagrams understandability, is to include a temp
 I have already created a Kaavio/PVJS "Manipulation API" that allows for developers to highlight, zoom to, or pan to nodes on a PVJS-rendered pathway. This API will be used extensively in this project.
 
 ## Methods
-Using the manipulation API, create a UI with tools to create different slides, in which manipulation API methods are specified for nodes in that pathway. Each new "slide" represents a pathway "state". Each state contains specification for which manipulation API methods are called on entering that state. 
+### Presentation API
+A new JavaScript API will be created that utilies the Manipulation API to create presentations containing different slides. The API will contain methods that allow for developers to create presentations, sides and add manipulation API operations to nodes in a slide. Each new "slide" represents a pathway "state". Each state contains specification for which manipulation API methods are called on entering that state. 
 
 For example:
 - Slide 1:
@@ -27,6 +28,9 @@ For example:
   - Animates in `node_3` `node_4` and `node_5`
   - Zooms in to those three nodes.
   
+### User Interface
+An interface will be created that enables users to easily create presentations. The interface relies on the presentation API. 
+![example user interface](Drawing.jpeg)
  
 ### Data Strorage
 All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The slide object contains key: value pair node IDs with an ordered list of the manipulation API methods, and their parameters that should be carried out
@@ -67,8 +71,6 @@ Example Slide:
   ]
 }
 ```
-## Example User Interface
-![example user interface](Drawing.jpeg)
 
 ## Future Work
 This project represents a starting point for future work that will improve upon this work. For example, a further feature would be the easy embedding of these presentations in other web applications. Hence this would allow for sites like Nature Reviews to replace their static diagrams with these story based pathways. Furthermore, the export of an MP4 version of these pathway presentations would allow for easy embedding within powerpoint presentations and the like. I have taken design considerations to make it easily possible to create an open API for third-party developers to create pathway presentations through their own applications. 
