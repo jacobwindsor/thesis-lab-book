@@ -33,7 +33,7 @@ An interface will be created that enables users to easily create presentations. 
 ![example user interface](Drawing.jpeg)
  
 ### Data Strorage
-All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The slide object contains key: value pair node IDs with an ordered list of the manipulation API methods, and their parameters that should be carried out
+All data is stored as a JSON object in a similiar way to the [Google Slides API](https://developers.google.com/slides/reference/rest/v1/presentations#Presentation). The presentation object contains attributes such as a Title, Description and an orderered list of the Slide Objects. The slide object contains key: value pair node IDs with an ordered list of the manipulation API operation, and their parameters that should be carried out. 
 
 Example Presentation:
 ```javascript
@@ -51,15 +51,20 @@ Example Presentation:
 ```
 
 Example Slide:
+
+Note that each manipulation API operation will be carried out in order, with no delays or user input to start animations. I propose to not implement features such as delays, in favour of using new slides. There is no ability for the user to click "next" to start the next manipulation API operation within a slide, new slides should be created for such behaviour.
+
 ```javascript
 {
+  animateIn: true,
+  animateOut: false,
    node_1: [
     {
       hidden: false,
       animate: 50
     },
     {
-      zoomOn: true,
+      zoomIn: true,
       animate: 100
     }
   ],
