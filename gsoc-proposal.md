@@ -82,3 +82,51 @@ This project represents a starting point for future work that will improve upon 
   
 ## Benefits to WikiPathways and Biomedical Communities
 Interactive pathway presentations is a further step forward in improving the dissemination of pathway knowledge. Currently, researchers mostly use static pathway diagrams in their presentations, in text books and even online. The proposed work here, will hopefully be a starting point to creating a service that is not only used within WikiPathways but also in other domains. One can foresee the use of this "Pathway Presenter" in spoken presentations, Nature highlights, and in teaching material.
+
+# Presentation API
+- Get a presentation with:
+
+```
+let pres = new Presentation().get(id);
+```
+
+- Create a presentation with:
+```
+let pres = new Presentation().create(wpId, title, description)
+```
+
+- Update meta with:
+```
+pres.update(title, description)
+```
+
+- Delete with:
+```pres.delete();
+```
+
+- Render the presentation diagram with (this will change on presentation changes):
+```
+pres.render(element, startSlide)
+```
+
+- Change slide with;
+```
+pres.next(); pres.prev(); pres.goTo(number);
+```
+
+- Add a slide with:
+```
+let slide = {...} SlideObject
+pres.addSlide(slide);
+```
+
+- Delete a slide with:
+```
+pres.delSlide(id);
+```
+
+- Update a slide with:
+```
+pres.updateSlide(id, SlideObject)
+```
+
