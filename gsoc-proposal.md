@@ -86,12 +86,12 @@ Interactive pathway presentations is a further step forward in improving the dis
 # Presentation API
 - Get a presentation with:
 
-```
+```js
 let pres = new Presentation().get(id);
 ```
 
 - Create a presentation with:
-```
+```js
 let pres = new Presentation().create(wpId, title, description)
 ```
 
@@ -101,7 +101,8 @@ pres.update(title, description)
 ```
 
 - Delete with:
-```pres.delete();
+```
+pres.delete();
 ```
 
 - Render the presentation diagram with (this will change on presentation changes):
