@@ -96,38 +96,38 @@ let pres = new Presentation().create(wpId, title, description)
 ```
 
 - Update meta with:
-```
+```js
 pres.update(title, description)
 ```
 
 - Delete with:
-```
+```js
 pres.delete();
 ```
 
 - Render the presentation diagram with (this will change on presentation changes):
-```
+```js
 pres.render(element, startSlide)
 ```
 
 - Change slide with;
-```
+```js
 pres.next(); pres.prev(); pres.goTo(number);
 ```
 
 - Add a slide with:
-```
+```js
 let slide = {...} SlideObject
 pres.addSlide(slide);
 ```
 
 - Delete a slide with:
-```
+```js
 pres.delSlide(id);
 ```
 
 - Update a slide with:
-```
+```js
 pres.updateSlide(id, SlideObject)
 ```
 
